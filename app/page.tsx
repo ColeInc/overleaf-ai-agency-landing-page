@@ -7,7 +7,6 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ProcessSteps from "@/components/process-steps"
 import ServiceCards from "@/components/service-cards"
-import AnimatedText from "@/components/animated-text"
 import ContactFormModal from "@/components/contact-form-modal"
 import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -31,18 +30,18 @@ export default function Home() {
           <div className="absolute bottom-1/4 left-1/2 w-96 h-96 bg-[#7ec8cc]/10 rounded-full blur-[120px] animate-blob animation-delay-4000" />
         </div>
 
-        <div className="flex flex-col items-center gap-6 max-w-[47rem] mx-auto relative z-10">
+        <div className="flex flex-col items-center gap-6 max-w-[52rem] mx-auto relative z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-foreground">
-            We Build AI Automations For{" "}
-            <span className="text-primary">
+            We Book Qualified Sales Calls For <span className="text-primary">B2B Agribusinesses.</span>
+            {/* <span className="text-primary">
               <AnimatedText
-                words={["Content Creation",  "Cold Outreach", "Lead Generation"]}
+                words={["Enterprise Farm Managers", "Co-op Decision-Makers", "Agribusiness Buyers"]}
               />
-            </span>
+            </span> */}
           </h1>
 
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl !text-[#bcbcbc]">
-            Leverage AI to transform your content production and outreach workflows, replacing manual effort with completely automated, scalable systems. Book a call to discuss a tailor-made strategy that works for you.
+            We build, run, and optimize cold email systems for Agriculture Tech Businesses from domain setup to inbox management. Your calendar gets qualified sales calls with the buyers you actually want. If we don't deliver, you don't pay.
           </p>
 
           <div className="flex gap-4 items-center mt-2">
@@ -54,7 +53,7 @@ export default function Home() {
                 size="lg"
               >
                 <span className="flex items-center gap-2">
-                  Let&apos;s talk
+                  Book a Call
                   <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
                     <Phone className="h-4 w-4 text-primary" />
                   </div>
@@ -70,7 +69,7 @@ export default function Home() {
       <section id="services" className="py-16 md:py-24 mx-auto max-w-6xl">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-foreground">Our Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-foreground">What We Do</h2>
           </div>
           <ServiceCards />
           {/* CTA Button */}
@@ -101,7 +100,7 @@ export default function Home() {
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-foreground">Our Process</h2>
             <p className="mt-4 text-sm text-muted-foreground">
-              A simple, streamlined process to provide your business with exactly what you need, and nothing extra.
+              We do the heavy lifting at every stage. Your involvement is two calls, then we build the rest.
             </p>
           </div>
           <ProcessSteps />
@@ -130,7 +129,7 @@ export default function Home() {
 
             {/* Bio in second column, second row */}
             <p className="!text-[18px] !leading-[24px] md:text-lg text-muted-foreground text-center md:text-left">
-              Cole is a Full-Stack Engineer turned Automation Specialist with a strong track record in building custom automation solutions for clients worldwide. Based in Auckland, he leads Overleaf.ai and works full time in the automation space, helping businesses streamline complex processes with practical, reliable systems. His background in software engineering gives him a deep understanding of how to design and develop automations that deliver real results.
+              Cole is a Full-Stack Engineer and outbound systems specialist focused exclusively on the B2B Agriculture Tech space. Based in Auckland, he founded overleaf.ai after seeing a consistent pattern in businesses having no reliable outbound system to put their services in front of the buyers who need them. He builds and manages complete end-to-end outbound systems from infrastructure to inbox management so Agriculture Tech Business founders can build a predictable way to bring in consistent leads and book sales calls.
             </p>
           </div>
         </div>
@@ -140,11 +139,11 @@ export default function Home() {
       <section id="book-call" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="mb-0 text-center">
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-foreground">Schedule a Call</h2>
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-foreground">Book Your Free Strategy Call</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Book a call to discuss how we can help implement AI solutions for your business.
+              We&apos;ll audit your current outbound setup and show you exactly how we&apos;d build a system to book 10+ qualified sales calls per month with your exact target audience.
             </p>
-            <p className="pt-3 font-bold max-w-[450px] mx-auto text-primary">When booking your call, please provide as much context and detail as possible.</p>
+            <p className="pt-3 font-bold max-w-[450px] mx-auto text-primary">When booking, share your target buyer and what you&apos;ve tried before. The more context we have, the better.</p>
           </div>
           <BookCallWidget />
         </div>

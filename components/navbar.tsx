@@ -29,13 +29,19 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex md:items-center md:space-x-6">
           <Link
-            href="#services"
+            href="/#services"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary !text-[#e0e0e0]"
           >
             Services
           </Link>
           <Link
-            href="#book-call"
+            href="/case-studies"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary !text-[#e0e0e0]"
+          >
+            Case Studies
+          </Link>
+          <Link
+            href="/#book-call"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary !text-[#e0e0e0]"
           >
             Contact
@@ -49,14 +55,14 @@ export default function Navbar() {
 
           <Card className="relative">
             <Button asChild className="relative overflow-hidden w-[160px]" variant={"outline"}>
-              <Link href="#book-call">Book a Call</Link>
+              <Link href="/#book-call">Book a Call</Link>
             </Button>
             <BorderBeam size={100} duration={8} colorFrom="#BFE2E4" colorTo="#9fd5d8" />
           </Card>
 
           {/* <Card className="relative w-[350px] overflow-hidden">
         <Button asChild className="relative overflow-hidden">
-              <Link href="#book-call">Book a Call</Link>
+              <Link href="/#book-call">Book a Call</Link>
             </Button> */}
       {/* <CardHeader> */}
         {/* <CardTitle>Login</CardTitle>
@@ -106,14 +112,21 @@ export default function Navbar() {
       >
         <nav className="container mx-auto flex flex-col space-y-4 px-4 py-6">
           <Link
-            href="#services"
+            href="/#services"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             onClick={() => setIsMenuOpen(false)}
           >
             Services
           </Link>
           <Link
-            href="#book-call"
+            href="/case-studies"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Case Studies
+          </Link>
+          <Link
+            href="/#book-call"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             onClick={() => setIsMenuOpen(false)}
           >
@@ -127,7 +140,7 @@ export default function Navbar() {
           </div>
           <div className="relative w-full">
             <Button asChild className="relative w-full overflow-hidden" onClick={() => setIsMenuOpen(false)}>
-              <Link href="#book-call">Book a Call</Link>
+              <Link href="/#book-call">Book a Call</Link>
             </Button>
             <BorderBeam size={100} duration={8} colorFrom="#3b82f6" colorTo="#8b5cf6" />
           </div>

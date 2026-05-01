@@ -32,7 +32,7 @@ export default function Footer() {
               <span className={`text-xl font-bold text-primary ${inter.className}`}>overleaf.ai</span>
             </Link>
             <p className="mt-4 max-w-md text-sm text-muted-foreground">
-              Leverage AI to transform your content production and outreach workflows, replacing manual effort with fully automated, scalable systems.
+              End-to-end outbound systems for Agriculture Tech Businesses. We build and manage cold email systems that book you qualified sales calls and bring your business more leads.
             </p>
             <div className="mt-6 flex space-x-4">
               <div className="space-y-4">

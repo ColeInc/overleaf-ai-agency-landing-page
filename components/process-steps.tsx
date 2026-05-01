@@ -1,52 +1,65 @@
-import { CalendarDays, FileText, Rocket, Search } from "lucide-react"
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function ProcessSteps() {
   const steps = [
     {
-      icon: Search,
-      title: "Discovery",
+      number: "01",
+      title: "Accounts & Infrastructure",
       description:
-        "A 30-minute discovery call to learn about your specific needs and pain points to understand exactly what you need to get done.",
+        "We get all your accounts live. Domains, sending inboxes, Apollo, Instantly, and anything else the system needs. Everything is set up in your name so you own the infrastructure. I walk you through how it all connects. This session is mostly admin, but it's the foundation everything else is built on.",
+      points: [
+        "Domains, inboxes, Apollo, Instantly — all live and in your name.",
+        "N8N workflows for automation. Completely setup and hosted.",
+        "DNS, warm-up, and deliverability configured correctly from day one.",
+        "Full walkthrough so you know what's been built and why.",
+      ],
     },
     {
-      icon: FileText,
-      title: "Proposal",
+      number: "02",
+      title: "Discovery Sessions",
       description:
-        "Based on insights from the discovery call, we'll define a clear project scope and craft a detailed specification to guide development toward the best possible solution.",
-
+        "Once accounts are live, I run a short series of discovery sessions before writing a single word of email copy. We define your ideal customer, the core problems they face, the solution you provide, and any past client wins or case studies we can reference to build credibility. The better I understand your business, the sharper every email will be.",
+      points: [
+        "We define your ideal customer profile: titles, company types, size, geography, and buying signals.",
+        "We map the core problems your target buyers face.",
+        "We clarify how your solution addresses those problems and what the outcome looks like.",
+        "We identify past client wins, results, or case studies that can be referenced in the copy to build trust.",
+      ],
     },
     {
-      icon: CalendarDays,
-      title: "Build",
+      number: "03",
+      title: "Build, Review & Launch",
       description:
-        "We design and build your automation with just the essential features, focusing on simplicity and speed, while our expert team follows best practices to deliver rapid, efficient development.",
-    },
-    {
-      icon: Rocket,
-      title: "Deliver / Launch",
-      description:
-        "We deliver your product on time, provide hands-on training, and ensure you're fully equipped to run it with confidence from day one.",
-
-
+        "With everything from the discovery sessions, we go away and build the full system. Lead lists sourced and verified. Email copy written and sequenced. Everything loaded into Instantly and your CRM. We review together, work through any changes until you're happy, then we start sending. From that point, the system runs — replies handled, demos booked, optimizations made every week.",
+      points: [
+        "Verified lead lists, written sequences, everything loaded and ready to review.",
+        "We work together, and only go ahead once you're satisfied.",
+        "We launch. Replies managed, demos booked, system optimised every week.",
+        "Your only involvement after launch: monthly update calls to monitor progress.",
+      ],
     },
   ]
 
   return (
-    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-6 md:grid-cols-3">
       {steps.map((step, index) => (
         <Card key={index} className="h-full border-white/5 transition-all hover:border-primary/50 hover:shadow-glow">
           <CardHeader>
-            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-md bg-primary/10">
-              <step.icon className="h-6 w-6 text-primary" />
-            </div>
-            <CardTitle className="flex items-center gap-2 text-foreground">
-              {step.title}
-            </CardTitle>
+            <span className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">{step.number}</span>
+            <CardTitle className="text-foreground">{step.title}</CardTitle>
           </CardHeader>
-          <CardContent>
-            <CardDescription className="text-sm text-muted-foreground">{step.description}</CardDescription>
+          <CardContent className="space-y-4">
+            <CardDescription className="text-sm text-muted-foreground leading-relaxed">
+              {step.description}
+            </CardDescription>
+            <ul className="space-y-2">
+              {step.points.map((point, pointIndex) => (
+                <li key={pointIndex} className="flex items-start gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"></span>
+                  <span className="text-xs text-muted-foreground leading-relaxed">{point}</span>
+                </li>
+              ))}
+            </ul>
           </CardContent>
         </Card>
       ))}

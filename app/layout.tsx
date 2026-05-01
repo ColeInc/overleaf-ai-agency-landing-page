@@ -5,8 +5,8 @@ import { Toaster } from "sonner"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "overleaf.ai - Automate your Content Production and Cold Outreach.",
-  description: "Leverage AI to transform your content production and outreach workflows, replacing manual effort with completely automated, scalable systems.",
+  title: "Overleaf AI | B2B Lead Generation Agency for AgTech",
+  description: "We help Agriculture Tech Businesses book 10+ qualified demos per month with enterprise farm managers and co-op decision-makers — using a done-for-you outbound system. No demos booked, no payment.",
   icons: {
     icon: '/favicon.ico',
   },
