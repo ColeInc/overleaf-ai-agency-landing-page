@@ -37,15 +37,6 @@ export default function Footer() {
             <div className="mt-6 flex space-x-4">
               <div className="space-y-4">
                 <div className="flex gap-2">
-                  <Link href={TWITTER_URL} target="_blank">
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="hover:border-primary/50 hover:bg-primary/10"
-                    >
-                      <Twitter className="w-4 h-4 text-foreground transition-colors" />
-                    </Button>
-                  </Link>
                   <Link href={LINKEDIN_URL} target="_blank">
                     <Button
                       variant="outline"
@@ -53,6 +44,15 @@ export default function Footer() {
                       className="hover:border-primary/50 hover:bg-primary/10"
                     >
                       <Linkedin className="w-4 h-4 text-foreground transition-colors" />
+                    </Button>
+                  </Link>
+                  <Link href={TWITTER_URL} target="_blank">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="hover:border-primary/50 hover:bg-primary/10"
+                    >
+                      <Twitter className="w-4 h-4 text-foreground transition-colors" />
                     </Button>
                   </Link>
                   <Link href={EMAIL_URL}>
