@@ -41,7 +41,7 @@ export default function Home() {
           </h1>
 
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl !text-[#bcbcbc]">
-            We build, run, and optimize cold email systems for Agriculture Tech Businesses from domain setup to inbox management. Your calendar gets qualified sales calls with the buyers you actually want. If we don't deliver, you don't pay.
+            Overleaf AI builds, runs, and optimizes cold email systems for Agriculture Tech Businesses — from domain setup to inbox management. Your calendar gets qualified sales calls with the buyers you actually want. If we don&apos;t deliver, you don&apos;t pay.
           </p>
 
           <div className="flex gap-4 items-center mt-2">

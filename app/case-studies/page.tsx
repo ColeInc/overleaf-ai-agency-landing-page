@@ -1,7 +1,22 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { ArrowLeft, Clock, Building2, TrendingUp, CheckCircle2 } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Case Studies — AgTech Outbound Systems Built by Overleaf AI",
+  description:
+    "Real cold email systems built by Overleaf AI for B2B clients. End-to-end automation, deliverability infrastructure, and qualified demo pipelines — production-ready in weeks.",
+  alternates: { canonical: "https://www.overleaf.agency/case-studies" },
+  openGraph: {
+    title: "Case Studies | Overleaf AI",
+    description:
+      "Real cold email systems built by Overleaf AI for B2B clients. Each engagement is a ground-up build.",
+    url: "https://www.overleaf.agency/case-studies",
+    type: "website",
+  },
+}
 
 const caseStudies = [
   {
