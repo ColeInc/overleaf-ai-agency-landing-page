@@ -71,6 +71,38 @@ Living tracking file for the SEO rollout described in `SEO_STRATEGY.md`. Updated
 
 - [ ] Defensive domain registration (overleaf.ai if available, theoverleaf.com)
 
+## Session handoff — 2026-05-09
+
+**Status:** Phase 1 complete. Phases 2 & 3 are mostly Cole-driven (account creation, GSC verification). To unblock browser-driven account creation, `chrome-devtools-mcp` was added to user-scope MCP config (`~/.claude.json`) and is connected.
+
+**ACTION REQUIRED:** Restart this Claude Code session — MCP tools only load at session start, so the current process can't see chrome-devtools tools yet.
+
+**Resume prompt after restart:** "Continue SEO_PROGRESS.md — drive Phase 3 account creation with chrome-devtools MCP. Start with LinkedIn personal update + X/Twitter @overleafai signup."
+
+**Before driving the browser, I'll need from Cole:**
+1. Which email to register profiles under (e.g., `cole@overleaf.agency`, `colehmcconnell@gmail.com`?)
+2. Confirm display name everywhere is exactly **"Overleaf AI"** (not "Overleaf Agency", not "overleaf.agency")
+3. Confirm founder name for profiles: **Cole McConnell**
+4. Confirm primary location: **Auckland, New Zealand** (for service-area / city fields)
+5. Logo file path (for upload to each platform — needs to be identical across all per §4.1 of strategy)
+6. Where to store generated passwords (1Password? plain file? I'll prompt before each signup)
+
+**Recommended Phase 3 execution order (highest entity-signal ROI first):**
+1. X/Twitter `@overleafai` — claim handle before squatters
+2. Cole's personal LinkedIn — add "Founder, Overleaf AI" employer + URL (fastest, no new account)
+3. Crunchbase company listing
+4. Clutch.co + G2 vendor profiles (B2B agency directories)
+5. Product Hunt maker profile
+6. YouTube channel "Overleaf AI"
+7. Medium publication
+8. Reddit `u/overleafai`
+9. Wellfound, GoodFirms, Sortlist, F6S, DesignRush, The Manifest, About.me
+10. Google Business Profile (service-area, Auckland) — postcard verification, slowest
+
+After each profile creation, paste the URL back and I'll add it to JSON-LD `sameAs` and tick it off above.
+
+---
+
 ## Open questions / blockers for Cole
 
 1. **OG image** — please create a 1200×630 PNG (black bg, "Overleaf AI" wordmark, tagline, teal `#BFE2E4` accent). Drop in `public/og-image.png`. Figma/Canva works.

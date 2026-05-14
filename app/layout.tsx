@@ -1,8 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import { inter } from "@/lib/fonts"
 import { Toaster } from "sonner"
 import "./globals.css"
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
 const SITE_URL = "https://www.overleaf.agency"
 const SITE_NAME = "Overleaf AI"
@@ -151,6 +154,7 @@ export default function RootLayout({
         />
         {children}
         <Toaster position="top-center" richColors closeButton />
+        {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
       </body>
     </html>
   )
